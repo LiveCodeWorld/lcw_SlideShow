@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Reveal + Burns</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="css/mrburns.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="slideshow">
+			// this is our cutom slideshow placed as a background image.
+		 	<div class="burns image" style="background-image: url('img/1.jpg')"></div>
+		 	<div class="burns image" style="background-image: url('img/2.jpg')"></div>
+		 	<div class="burns image" style="background-image: url('img/3.jpg')"></div>
+		 	<div class="burns image" style="background-image: url('img/4.jpg')"></div>
+		  <div class="burns image" style="background-image: url('img/5.jpg')"></div>
+		</div>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+						<h1>Forgiveness means pardoning injuries or offences. I practice forgiveness when I pardon, accept or overlook the offences, mistakes or faults of others. The opposite is mercilessness.</h1>
+				</section>
+
+				<section>
+					<h2>In response to a friend's annoying behaviour you...</h2>
+					<p>GENTLENESS: Become irritated but remain calm and do not react</p>
+					<p>HARSHNESS: Become irritated and deliver a mean rebuke</p></section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// controls: true,
+				// progress: true,
+				history: true,
+				// center: true, // seems to mess with css positioning of
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// { src: 'plugin/zoom-js/zoom.js', async: true },
+					// { src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+
+<html>
